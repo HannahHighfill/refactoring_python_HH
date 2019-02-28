@@ -23,7 +23,7 @@ def main():
         middle = open(page['filename']).read()      
         bottom = open('templates/bottom.html').read()
         combined = top + middle + bottom
-    open('docs/',"w+").write(combined)
+        open(page["output"],"w+").write(combined)
 # do the same thing here that I learned in middle    
     
 print("Built!")
